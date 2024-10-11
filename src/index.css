@@ -13,6 +13,14 @@ body {
   font-family: "General Sans", sans-serif;
 }
 
+@layer base {
+  /* base styles here */
+}
+
+@layer components {
+  /* component styles here */
+}
+
 @layer utilities {
   .c-space {
     @apply sm:px-10 px-5;

@@ -1,6 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./src/index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/sections/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
       fontFamily: {
@@ -24,7 +28,7 @@ export default {
         },
       },
       backgroundImage: {
-        terminal: "url('/assets/terminal.png')",
+        terminal: "url('./assets/terminal.png')",
       },
     },
   },
