@@ -1,14 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-    "./src/sections/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+
   theme: {
     extend: {
       fontFamily: {
-        generalsans: ["General Sans", "sans-serif"],
+        generalsans: ["General Sans", "sans-serif"], // Fixed yntax error here
       },
       colors: {
         black: {
