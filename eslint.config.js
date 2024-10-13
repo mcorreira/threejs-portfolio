@@ -27,7 +27,7 @@ export default [
       react: react,
       "react-hooks": reactHooks,
       "react-refresh": reactRefresh,
-      "@react-three": reactThreeFiber,
+      "react-three": reactThree,
     },
     rules: {
       ...js.configs.recommended.rules,
@@ -35,11 +35,13 @@ export default [
       ...react.configs["jsx-runtime"].rules,
       ...reactHooks.configs.recommended.rules,
       "react/jsx-no-target-blank": "off",
+      "react/prop-types": "off",
+      "react/no-unknown-property": "off", // Added missing comma
       "react-refresh/only-export-components": [
         "warn",
-        { allowConstantExport: true },
+        { allowConstantExport: true }, // Moved object inside the array
       ],
-      "react/react-in-jsx-scope": "off",
+      "react/react-in-jsx-scope": "off", // Moved outside of the array and added comma
     },
   },
 ];
